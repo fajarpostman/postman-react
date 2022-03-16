@@ -1,0 +1,533 @@
+// Home
+
+#first-circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    float: left;
+    margin-left: -110px;
+    margin-top: 70px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, $gradient_1, $gradient_2);
+    transform: rotateY(180deg);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#second-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, $gradient_1, $gradient_2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 120px;
+    margin-top: 90px;
+    transform: rotateY(180deg);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#third-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, $gradient_1, $gradient_2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 140px;
+    margin-top: 170px;
+    transform: rotateY(180deg);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#fourth-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, $gradient_1, $gradient_2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 120px;
+    margin-top: 250px;
+    transform: rotateY(180deg);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    @media screen and (max-width: $mobile_s) {
+        width: 50px;
+        height: 50px;
+        margin-left: 85px;
+        margin-top: 210px;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        width: 50px;
+        height: 50px;
+        margin-left: 85px;
+        margin-top: 210px;
+    }
+}
+
+#fifth-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, $gradient_1, $gradient_2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 60px;
+    margin-top: 310px;
+    transform: rotateY(180deg);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.home-section-first {
+    margin-left: 45px;
+    margin-top: 20px;
+
+    @media screen and (max-width: $mobile_s) {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $laptop) {
+    }
+}
+
+.home-section-second {
+    margin-left: 200px;
+    margin-top: 10px;
+
+    @media screen and (max-width: $mobile_s) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+.home-section-thrid {
+    margin-left: 600px;
+    margin-top: 0px;
+
+    @media screen and (max-width: $mobile_s) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+.first-paragraph {
+    font-family: "Metropolis-Bold";
+    font-size: 110px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile_s) {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+// .header-text {
+//     font-family: "Metropolis-Bold";
+//     font-size: 100px;
+//     text-align: center;
+// }
+
+// span::before {
+//     content: "Welcome";
+//     animation: animate infinite 10s;
+// }
+
+// @keyframes animate {
+//     0% {
+//         content: "Benvenuti";
+//     }
+
+//     50% {
+//         content: "Selamat Datang";
+//     }
+// }
+
+.second-paragraph {
+    font-family: "Metropolis-Bold";
+    font-size: 110px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile_s) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+.thrid-paragraph {
+    font-family: "Metropolis-Bold";
+    font-size: 110px;
+    text-align: center;
+    margin-top: 100px;
+
+    @media screen and (max-width: $mobile_s) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+.rectangle-1 {
+    width: 300px;
+    height: 60px;
+    margin-top: 25px;
+    margin-left: 350px;
+    border: solid 4px transparent;
+    border-radius: 60px;
+    position: absolute;
+    z-index: -1;
+    animation: flickerAnimation 3s infinite alternate;
+    background-image: linear-gradient(white, white),
+        linear-gradient(
+            45deg,
+            $gradient_rectangle_1,
+            $gradient_rectangle_2,
+            $gradient_rectangle_3
+        );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    @media screen and (max-width: $mobile_s) {
+        width: 120px;
+        height: 35px;
+        margin-top: 8px;
+        margin-left: 90px;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        width: 120px;
+        height: 35px;
+        margin-top: 8px;
+        margin-left: 90px;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        width: 120px;
+        height: 35px;
+        margin-top: 8px;
+        margin-left: 90px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 120px;
+        height: 35px;
+        margin-top: 8px;
+        margin-left: 90px;
+    }
+}
+
+.rectangle-2 {
+    width: 300px;
+    height: 60px;
+    margin-left: 70px;
+    margin-top: 25px;
+    border: solid 4px transparent;
+    border-radius: 60px;
+    position: absolute;
+    z-index: -1;
+    animation: flickerAnimation 3s infinite alternate;
+    background-image: linear-gradient(white, white),
+        linear-gradient(
+            45deg,
+            $gradient_rectangle_1,
+            $gradient_rectangle_2,
+            $gradient_rectangle_3
+        );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    @media screen and (max-width: $mobile_s) {
+        width: 120px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: $mobile_m) {
+        width: 120px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: $mobile_l) {
+        width: 120px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 120px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation 3s infinite alternate;
+    -moz-animation: flickerAnimation 3s infinite alternate;
+    -o-animation: flickerAnimation 3s infinite alternate;
+    animation: flickerAnimation 3s infinite alternate;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+// Home End
+
+// About
+
+.about-header {
+    font-family: "Metropolis-Bold";
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 4px solid $gradient_2;
+}
+
+.about-card-body {
+    width: 100%;
+    height: 350px;
+    background-color: $primary_color;
+    box-shadow: 4px 4px 12px 0px rgb(77 77 77 / 75%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative !important;
+}
+
+.about-card-up {
+    position: relative !important;
+    height: 200px;
+    padding: 20px;
+}
+
+.about-card-down {
+    position: relative !important;
+    height: 150px;
+    padding: 20px;
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animate-flicker {
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+// About End
+
+// Footer
+
+.footer {
+    flex-shrink: 0;
+    background: $gradient_1;
+}
+
+.footer-text {
+    font-family: "Metropolis-Bold";
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    color: $primary_color;
+}
+// Footer End

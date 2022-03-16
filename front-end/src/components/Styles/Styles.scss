@@ -1,0 +1,210 @@
+/**
+ * Copyright (c) 2021 Fajar Postman.
+ * Reactjs Project Template Modification
+ * Please Contact our email for more information :
+ * @office contact@fajarpostman.com
+ * 
+ * Description of Styles
+ * 
+ * @author Fajar Dwi Rianto fajar@fajarpostman.com
+ * 
+ * @version 1.0
+ */
+
+
+// This is scss for styling the page
+
+// Color
+
+$fajar_postman_white: #fff;
+$fajar_postman_black: #000;
+$fajar_postman_whitesmoke: #F5F5F5;
+$fajar_postman_red_medium_light: #ff5851;
+$fajar_postman_red_hard_light: #f9004d;
+$fajar_posmtan_pink_soft: #ff0075;
+$fajar_postman_white_medium_light: #f8f8f8;
+$fajar_postman_orange_medium_light: #ffa648;
+$fajar_postman_orange_hard_light: #ff793c ;
+$fajar_postman_orange_bold: #ff7419;
+$fajar_postman_purple_light: #9b5de6;
+// Color End
+
+// Media Size
+
+$mobile_s: 320px;
+$mobile_m: 375px;
+$mobile_l: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptop_l: 1440px;
+$laptop_4k: 2560px;
+
+// Media Size End
+
+// Font
+
+@font-face {
+    font-family: "Metropolis-Regular";
+    src: local("Metropolis-Regular"),
+        url(../../fonts/Metropolis-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis-Medium";
+    src: local("Metropolis-Medium"),
+        url(../../fonts/Metropolis-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis-SemiBold";
+    src: local("Metropolis-SemiBold"),
+        url(../../fonts/Metropolis-SemiBold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis-Bold";
+    src: local("Metropolis-Bold"),
+        url(../../fonts/Metropolis-Bold.otf) format("opentype");
+}
+
+// Font End
+
+// Welcome Page
+
+.welcome-container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.welcome-container-full {
+    min-height: 100vh;
+    padding: 9rem 3rem;
+    position: relative;
+}
+
+.welcome-text-zone {
+    font-family: "Metropolis-Bold";
+}
+
+.welcome-image-zone {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.welcome-image-zone-img {
+    width: 70px;
+    height: 70px;
+}
+
+.welcome-text-zone-header {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.welcome-button-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.welcome-button-flat {
+    text-decoration: none;
+    border: 2px solid $fajar_postman_orange_medium_light;
+    padding: 10px;
+    color: $fajar_postman_black;
+    transition-duration: 0.4s;
+}
+
+.welcome-button-flat:hover {
+    background-color: $fajar_postman_orange_medium_light;
+    color: $fajar_postman_white;
+}
+
+.welcome-background {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-30deg, $fajar_postman_red_medium_light 30%, $fajar_postman_orange_bold 40%, $fajar_postman_whitesmoke 50%, $fajar_postman_purple_light 90%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.welcome-background-2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.welcome-background-3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+// .welcome-background {
+//     animation: slide 3s ease-in-out infinite alternate;
+//     background-image: linear-gradient(-80deg, #f8f8f8 50%, #ffa648 50%, #ff7419 50%);
+//     bottom:0;
+//     left:-50%;
+//     opacity:.5;
+//     position:fixed;
+//     right:-50%;
+//     top:0;
+//     z-index:-1;
+// }
+
+// .welcome-background-2 {
+//     animation-direction:alternate-reverse;
+//     animation-duration:4s;
+// }
+
+// .welcome-background-3 {
+//     animation-duration:5s;
+// }
+
+// @keyframes slide {
+//     0% {
+//       transform:translateX(-25%);
+//     }
+//     100% {
+//       transform:translateX(25%);
+//     }
+//   }
+
+// Welcome Page End
+
+// Navigasi
+
+.navigation-shadow {
+    box-shadow: 0 4px 15px 0 rgb(77 77 77 / 75%);
+}
+
+.image-navigation {
+    width: 35px;
+    height: auto;
+}
+
+.nav-item {
+    font-family: "Metropolis-SemiBold";
+}
+
+.active {
+    font-family: "Metropolis-Bold";
+    font-weight: bold;
+}
+
+// Navigasi End
+
+
