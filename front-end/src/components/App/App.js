@@ -17,7 +17,6 @@ import "../Styles/Styles.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Home from "../Home/Home";
 import Welcome from "../Welcome/Welcome";
-import Navigation from "../Navigation/Navigation";
 
 function App() {
   return (
@@ -26,7 +25,6 @@ function App() {
       <Switch>
         <Route exact path="/" component={ Welcome } />
         <Route path="/home" component={ Home } />
-        <Route path="/navigation" component={ Navigation } />
       </Switch>
     </Router>
     </>
